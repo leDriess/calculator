@@ -1,0 +1,102 @@
+@import "../../scss/variables.scss";
+
+.calculator {
+  width: 368px;
+  min-height: 600px;
+  background-color: black;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.header {
+  height: 140px;
+  background-color: $header-bg-color;
+  padding: 30px;
+  text-align: right;
+  line-height: 1.5;
+}
+
+.history {
+  color: $history-font-color;
+  font-size: 1rem;
+  font-weight: 400;
+  display: block;
+  min-height: 1.5rem;
+}
+
+.result {
+  color: $result-font-color;
+  font-size: 50px;
+  display: block;
+}
+
+.numpad {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.btn {
+  font-family: "Lato", sans-serif;
+  font-weight: 300;
+
+  height: 92px;
+  font-size: 22px;
+  border: 0;
+  background-color: $number-button-bg-color;
+
+  &:hover {
+    background-color: #ddd;
+  }
+
+  &.operator {
+    color: white;
+
+    &.operator:hover {
+      background-color: $operators-hover-bg-color;
+    }
+
+    &.equals {
+      width: 100%;
+      grid-column: 3/5;
+      background-color: $equals-button-bg-color;
+      font-size: 35px;
+
+      &:hover {
+        background-color: $equals-button-hover-bg-color;
+      }
+    }
+
+    &.divide {
+      background-color: $divide-button-bg-color;
+    }
+
+    &.multiply {
+      background-color: $multiply-button-bg-color;
+    }
+    &.minus {
+      background-color: $minus-button-bg-color;
+    }
+    &.plus {
+      background-color: $plus-button-bg-color;
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .calculator {
+    width: 100%;
+    height: 100%;
+    border-radius: unset;
+  }
+
+  .numpad {
+    align-content: stretch;
+  }
+}
+
+@media (max-height: 580px) {
+  .calculator {
+    margin: 0 auto;
+    border-radius: unset;
+  }
+}

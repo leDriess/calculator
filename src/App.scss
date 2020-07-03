@@ -1,0 +1,39 @@
+@import "./scss/variables.scss";
+@import "./scss/reset.scss";
+
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400&display=swap");
+
+html {
+  box-sizing: border-box;
+  font-family: $font-family-sans-serif;
+  font-weight: 300;
+}
+
+@mixin background-gradient {
+  background: rgb(145, 86, 225);
+  background: linear-gradient(120deg, rgba(145, 86, 225, 1) 0%, rgba(247, 146, 113, 1) 100%);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body {
+  @include background-gradient();
+  height: 100vh;
+  // overflow: scroll;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+@media (max-width: 400px) {
+  body {
+    display: block;
+  }
+}
+
+@media (max-height: 580px) {
+  body {
+    display: block;
+  }
+}
