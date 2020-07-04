@@ -7,7 +7,7 @@ Simple calculator with basic for basic operations like adding, subtracting, divi
 - [Create React App](https://github.com/facebook/create-react-app)
 
 **Live demo:**
-[https://5eff51c27b63d4fb6095eff2--objective-haibt-e13473.netlify.app/](https://5eff51c27b63d4fb6095eff2--objective-haibt-e13473.netlify.app/)
+[https://ledriess-calculator.netlify.app/](https://ledriess-calculator.netlify.app/)
 
 **Installation:**
 
